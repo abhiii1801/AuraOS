@@ -1,0 +1,73 @@
+Understood. Here is the technical breakdown of your AuraOS database schema in a clean, written format for your documentation, omitting the table structures and focusing strictly on the definitions, types, and constraints.
+
+1. Entity: users
+This entity serves as the primary identity provider, linking web, Google, and Telegram sessions.
+
+ID: UUID. Primary Key. Automatically generated via uuid_generate_v4().
+
+Email: Text. Not Null constraint. Used as the unique identifier for Google Auth.
+
+Google Refresh Token: Text. Nullable. Stored to maintain long-term, offline access to Google APIs.
+
+Telegram Chat ID: Bigint. Nullable. Links a specific Telegram account to the database.
+
+Link Code: Character Varying (6). Nullable. A temporary code used for secure device pairing.
+
+Created At: Timestamp with time zone. Defaults to now().
+
+2. Entity: expenses
+Stores all financial transactions for the Ledger and visual analytics.
+
+ID: UUID. Primary Key. Automatically generated via uuid_generate_v4().
+
+User ID: UUID. Not Null constraint. Acts as a Foreign Key linking the record to a specific user.
+
+Amount: Numeric. Not Null constraint. Stores transaction values with high decimal precision.
+
+Category: Text. Not Null constraint. Used for classification in UI donut charts.
+
+Merchant: Text. Nullable. Stores the vendor or store name.
+
+Transaction Date: Timestamp with time zone. Defaults to now().
+
+Transaction Type: Text. Defaults to 'debit'. Categorizes the entry as spending ('debit') or income ('credit').
+
+Notes: Text. Nullable. Stores additional user-provided context for the transaction.
+
+3. Entity: subscriptions
+Manages recurring payments and automated billing alerts.
+
+ID: UUID. Primary Key. Automatically generated via uuid_generate_v4().
+
+User ID: UUID. Not Null constraint. Foreign Key linking the subscription to its owner.
+
+Name: Text. Not Null constraint. The name of the service (e.g., Netflix).
+
+Amount: Numeric. Not Null constraint. The recurring cost per billing cycle.
+
+Billing Cycle: Text. Nullable. Defines the frequency (Monthly/Yearly).
+
+Billing Day: Integer. Defaults to 1. The day of the month the charge occurs.
+
+Next Billing Date: Date. Nullable. Predicted date for the upcoming charge.
+
+Is Active: Boolean. Defaults to true. A toggle to enable or disable tracking for the service.
+
+Created At: Timestamp with time zone. Defaults to now().
+
+4. Entity: second_brain
+The high-dimensional vault for AI-powered note retrieval and 3D visualization.
+
+ID: UUID. Primary Key. Automatically generated via uuid_generate_v4().
+
+User ID: UUID. Not Null constraint. Foreign Key linking the note to a specific user.
+
+Content: Text. Not Null constraint. The raw text of the idea, note, or thought.
+
+Category: Text. Not Null constraint. High-level classification (e.g., Tech, Idea).
+
+Tags: ARRAY. Nullable. A list of searchable keywords for better organization.
+
+Embedding: User-Defined/Vector(3072). Nullable. A mathematical representation of the note used for semantic similarity and graph linking.
+
+Created At: Timestamp with time zone. Defaults to now().

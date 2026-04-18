@@ -1,0 +1,51 @@
+# ----------------------------------------------------------------------------
+# OS / Environment Options
+# ----------------------------------------------------------------------------
+.DS_Store
+*.pem
+.env*
+!.env.example
+
+# ----------------------------------------------------------------------------
+# Frontend Specific (.next, node_modules, etc.)
+# ----------------------------------------------------------------------------
+aura-os-frontend/node_modules/
+aura-os-frontend/.pnp
+aura-os-frontend/.pnp.*
+aura-os-frontend/.yarn/*
+!aura-os-frontend/.yarn/patches
+!aura-os-frontend/.yarn/plugins
+!aura-os-frontend/.yarn/releases
+!aura-os-frontend/.yarn/versions
+
+aura-os-frontend/coverage/
+aura-os-frontend/.next/
+aura-os-frontend/out/
+aura-os-frontend/build/
+
+aura-os-frontend/npm-debug.log*
+aura-os-frontend/yarn-debug.log*
+aura-os-frontend/yarn-error.log*
+aura-os-frontend/.pnpm-debug.log*
+
+aura-os-frontend/.vercel/
+aura-os-frontend/*.tsbuildinfo
+aura-os-frontend/next-env.d.ts
+
+# ----------------------------------------------------------------------------
+# Backend Specific (venv, __pycache__, tokens, etc.)
+# ----------------------------------------------------------------------------
+aura-os-backend/venv/
+aura-os-backend/__pycache__/
+aura-os-backend/*.pyc
+aura-os-backend/*.pyo
+aura-os-backend/*.pyd
+aura-os-backend/token.json
+aura-os-backend/credentials.json
+aura-os-backend/*.log
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
