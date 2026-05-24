@@ -71,3 +71,59 @@ Tags: ARRAY. Nullable. A list of searchable keywords for better organization.
 Embedding: User-Defined/Vector(3072). Nullable. A mathematical representation of the note used for semantic similarity and graph linking.
 
 Created At: Timestamp with time zone. Defaults to now().
+
+
+These tables are also added now:
+
+-- 1. Create User Preferences Table
+CREATE TABLE IF NOT EXISTS public.user_preferences (
+    id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+    user_id UUID NOT NULL REFERENCES public.users(id) ON DELETE CASCADE,
+    fitness_goals JSONB DEFAULT '{}'::jsonb,
+    budget_allocation NUMERIC DEFAULT 0,
+    finance_categories JSONB DEFAULT '[]'::jsonb,
+    initial_balance NUMERIC DEFAULT 0,
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
+);
+
+-- 2. Create Health Metrics Cache Table
+CREATE TABLE IF NOT EXISTS public.cache_health_metrics (
+    user_id UUID NOT NULL REFERENCES public.users(id) ON DELETE CASCADE,
+    date DATE NOT NULL,
+    metrics_data JSONB DEFAULT '{}'::jsonb,
+    last_synced TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
+    PRIMARY KEY (user_id, date)
+);
+
+-- 3. Create Info Feed Cache Table
+CREATE TABLE IF NOT EXISTS public.cache_info_feed (
+    user_id UUID NOT NULL REFERENCES public.users(id) ON DELETE CASCADE,
+    date DATE NOT NULL,
+    news_data JSONB DEFAULT '[]'::jsonb,
+    emails_data JSONB DEFAULT '[]'::jsonb,
+    youtube_data JSONB DEFAULT '[]'::jsonb,
+    email_summary TEXT DEFAULT '',
+    last_synced TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
+    PRIMARY KEY (user_id, date)
+);
+
+-- 4. Create Vault Projects Table
+CREATE TABLE IF NOT EXISTS public.vault_projects (
+    id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+    user_id UUID NOT NULL REFERENCES public.users(id) ON DELETE CASCADE,
+    name TEXT NOT NULL,
+    description TEXT,
+    status TEXT DEFAULT 'active',
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
+);
+
+-- 5. Create Vault Files Table
+CREATE TABLE IF NOT EXISTS public.vault_files (
+    id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+    user_id UUID NOT NULL REFERENCES public.users(id) ON DELETE CASCADE,
+    project_id UUID REFERENCES public.vault_projects(id) ON DELETE CASCADE,
+    filename TEXT NOT NULL,
+    storage_path TEXT,
+    size_bytes INTEGER DEFAULT 0,
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
+);

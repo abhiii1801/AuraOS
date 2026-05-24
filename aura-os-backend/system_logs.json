@@ -1,0 +1,641 @@
+[
+  {
+    "timestamp": "2026-05-17T02:40:41.200682",
+    "type": "GEMINI_RESPONSE",
+    "data": {
+      "agent": "info_agent",
+      "action": "email_summary",
+      "raw_output": "[\n  {\n    \"text\": \"Your monthly Demat Account Statement for April 2026 has been received from Upstox. It is password-protected and attached.\",\n    \"is_urgent\": false\n  },\n  {\n    \"text\": \"Two notices for campus placement drives were forwarded by AIT Placement: one for Clarity (We Heal Private Limited) and a follow-up regarding the Tata Consultancy Services (TCS NQT). These likely require immediate action or dissemination.\",\n    \"is_urgent\": true\n  },\n  {\n    \"text\": \"You received promotional emails from Codecademy (50% off Pro until May 18th) and Dribbble (talent platform), plus a newsletter from Nick Singh.\",\n    \"is_urgent\": false\n  }\n]"
+    }
+  },
+  {
+    "timestamp": "2026-05-17T02:40:39.787911",
+    "type": "GEMINI_RESPONSE",
+    "data": {
+      "agent": "info_agent",
+      "action": "email_summary",
+      "raw_output": "[\n  {\n    \"text\": \"Your April 2026 Monthly Demat Account Statement from Upstox is attached.\",\n    \"is_urgent\": false\n  },\n  {\n    \"text\": \"Codecademy is offering 50% off an annual Pro plan until May 18th. Dribbble also sent a promotional email regarding finding design and development talent.\",\n    \"is_urgent\": false\n  },\n  {\n    \"text\": \"Nick Singh sent a new article titled 'the &#39;work smart, not hard&#39; trap'.\",\n    \"is_urgent\": false\n  },\n  {\n    \"text\": \"AIT Placement sent two urgent notices for upcoming campus placement drives: one for Clarity (We Heal Private Limited) and a follow-up regarding the TCS National Qualifier Test (NQT).\",\n    \"is_urgent\": true\n  }\n]"
+    }
+  },
+  {
+    "timestamp": "2026-05-17T02:40:37.258797",
+    "type": "GEMINI_CALL",
+    "data": {
+      "agent": "info_agent",
+      "action": "email_summary",
+      "prompt": "You are my sharp executive assistant. Summarize these recent emails in 3-5 concise bullet points. Flag anything that looks urgent or needs my action. Output EXCLUSIVELY as a valid JSON array of objects. Do not use markdown blocks. Each object must have two properties:\n- 'text' (string): The summary text.\n- 'is_urgent' (boolean): True if the email requires urgent action, false otherwise.\n\nEmails:\nFrom: Upstox <donotreply@transactions.upstox.com>\nSubject: Monthly Demat Account Statement for April 2026\nPreview: Hi, Your password-protected Monthly Demat Account Statement is attached to this email. To access it, use your PAN (in lowercase). Example If your PAN is ABCD1234X, enter the password as abcd1234x when\n\nFrom: Codecademy <learn@itr.mail.codecademy.com>\nSubject: Get 50% off Pro\nPreview: Reach your career goals with 50% off an annual Pro plan. MAY 13-18 50% off Pro It&#39;s easier to reach your career goals with 50% off annual Pro membership. Access 700+ courses, projects,\n\nFrom: Nick Singh <hello@nicksingh.com>\nSubject: the 'work smart, not hard' trap \ud83d\udc4e\nPreview: Abhinav are tech careers sprinting marathons? \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c\n\nFrom: Dribbble <no-reply@n.dribbble.com>\nSubject: Find world-class design and development talent on Dribbble.\nPreview: Compare portfolios, ratings, reviews, badges, rates, and response times across nearly one million freelancers and agencies on Dribbble. \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c\n\nFrom: AIT Placement <aitcse.placements@cumail.in>\nSubject: Fwd: Notice for a Campus Placement Drive - Clarity (We Heal Private Limited)\nPreview: Corporate Resource Centre Mohali Ref. No: CRC/NOP/2026/2899 Dated: May 16th, 2026 Notice for a Campus Placement Drive (Copy of this notice should NOT be put on blogs/Facebook/ social media etc.) We are\n\nFrom: AIT Placement <aitcse.placements@cumail.in>\nSubject: Fwd: Notice for a Campus Placement Drive - Tata Consultancy Services - TCS National Qualifier Test (NQT)\nPreview: Dear Sir/Madam, Kindly refer to our earlier notice no. CRC/NOP/2026/2860 vide our email dated 8 th May 2026 regarding the Tata Consultancy Services - TCS National Qualifier Test (NQT). Please find"
+    }
+  },
+  {
+    "timestamp": "2026-05-17T02:40:33.581875",
+    "type": "GEMINI_CALL",
+    "data": {
+      "agent": "info_agent",
+      "action": "email_summary",
+      "prompt": "You are my sharp executive assistant. Summarize these recent emails in 3-5 concise bullet points. Flag anything that looks urgent or needs my action. Output EXCLUSIVELY as a valid JSON array of objects. Do not use markdown blocks. Each object must have two properties:\n- 'text' (string): The summary text.\n- 'is_urgent' (boolean): True if the email requires urgent action, false otherwise.\n\nEmails:\nFrom: Upstox <donotreply@transactions.upstox.com>\nSubject: Monthly Demat Account Statement for April 2026\nPreview: Hi, Your password-protected Monthly Demat Account Statement is attached to this email. To access it, use your PAN (in lowercase). Example If your PAN is ABCD1234X, enter the password as abcd1234x when\n\nFrom: Codecademy <learn@itr.mail.codecademy.com>\nSubject: Get 50% off Pro\nPreview: Reach your career goals with 50% off an annual Pro plan. MAY 13-18 50% off Pro It&#39;s easier to reach your career goals with 50% off annual Pro membership. Access 700+ courses, projects,\n\nFrom: Nick Singh <hello@nicksingh.com>\nSubject: the 'work smart, not hard' trap \ud83d\udc4e\nPreview: Abhinav are tech careers sprinting marathons? \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c\n\nFrom: Dribbble <no-reply@n.dribbble.com>\nSubject: Find world-class design and development talent on Dribbble.\nPreview: Compare portfolios, ratings, reviews, badges, rates, and response times across nearly one million freelancers and agencies on Dribbble. \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c\n\nFrom: AIT Placement <aitcse.placements@cumail.in>\nSubject: Fwd: Notice for a Campus Placement Drive - Clarity (We Heal Private Limited)\nPreview: Corporate Resource Centre Mohali Ref. No: CRC/NOP/2026/2899 Dated: May 16th, 2026 Notice for a Campus Placement Drive (Copy of this notice should NOT be put on blogs/Facebook/ social media etc.) We are\n\nFrom: AIT Placement <aitcse.placements@cumail.in>\nSubject: Fwd: Notice for a Campus Placement Drive - Tata Consultancy Services - TCS National Qualifier Test (NQT)\nPreview: Dear Sir/Madam, Kindly refer to our earlier notice no. CRC/NOP/2026/2860 vide our email dated 8 th May 2026 regarding the Tata Consultancy Services - TCS National Qualifier Test (NQT). Please find"
+    }
+  },
+  {
+    "timestamp": "2026-05-17T02:40:33.156661",
+    "type": "GEMINI_CALL",
+    "data": {
+      "agent": "info_agent",
+      "action": "email_summary",
+      "prompt": "You are my sharp executive assistant. Summarize these recent emails in 3-5 concise bullet points. Flag anything that looks urgent or needs my action. Output EXCLUSIVELY as a valid JSON array of objects. Do not use markdown blocks. Each object must have two properties:\n- 'text' (string): The summary text.\n- 'is_urgent' (boolean): True if the email requires urgent action, false otherwise.\n\nEmails:\nFrom: Upstox <donotreply@transactions.upstox.com>\nSubject: Monthly Demat Account Statement for April 2026\nPreview: Hi, Your password-protected Monthly Demat Account Statement is attached to this email. To access it, use your PAN (in lowercase). Example If your PAN is ABCD1234X, enter the password as abcd1234x when\n\nFrom: Codecademy <learn@itr.mail.codecademy.com>\nSubject: Get 50% off Pro\nPreview: Reach your career goals with 50% off an annual Pro plan. MAY 13-18 50% off Pro It&#39;s easier to reach your career goals with 50% off annual Pro membership. Access 700+ courses, projects,\n\nFrom: Nick Singh <hello@nicksingh.com>\nSubject: the 'work smart, not hard' trap \ud83d\udc4e\nPreview: Abhinav are tech careers sprinting marathons? \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c\n\nFrom: Dribbble <no-reply@n.dribbble.com>\nSubject: Find world-class design and development talent on Dribbble.\nPreview: Compare portfolios, ratings, reviews, badges, rates, and response times across nearly one million freelancers and agencies on Dribbble. \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c\n\nFrom: AIT Placement <aitcse.placements@cumail.in>\nSubject: Fwd: Notice for a Campus Placement Drive - Clarity (We Heal Private Limited)\nPreview: Corporate Resource Centre Mohali Ref. No: CRC/NOP/2026/2899 Dated: May 16th, 2026 Notice for a Campus Placement Drive (Copy of this notice should NOT be put on blogs/Facebook/ social media etc.) We are\n\nFrom: AIT Placement <aitcse.placements@cumail.in>\nSubject: Fwd: Notice for a Campus Placement Drive - Tata Consultancy Services - TCS National Qualifier Test (NQT)\nPreview: Dear Sir/Madam, Kindly refer to our earlier notice no. CRC/NOP/2026/2860 vide our email dated 8 th May 2026 regarding the Tata Consultancy Services - TCS National Qualifier Test (NQT). Please find"
+    }
+  },
+  {
+    "timestamp": "2026-05-17T02:40:19.931724",
+    "type": "API_HIT",
+    "data": {
+      "endpoint": "POST /api/info/sync",
+      "user_id": "074e2857-7d13-4bd1-94bc-e74e0b1b9533"
+    }
+  },
+  {
+    "timestamp": "2026-05-17T02:40:19.711723",
+    "type": "API_HIT",
+    "data": {
+      "endpoint": "POST /api/info/sync",
+      "user_id": "074e2857-7d13-4bd1-94bc-e74e0b1b9533"
+    }
+  },
+  {
+    "timestamp": "2026-05-17T02:40:19.132837",
+    "type": "API_HIT",
+    "data": {
+      "endpoint": "GET /api/info/daily_digest",
+      "user_id": "074e2857-7d13-4bd1-94bc-e74e0b1b9533"
+    }
+  },
+  {
+    "timestamp": "2026-05-17T02:40:18.710024",
+    "type": "API_HIT",
+    "data": {
+      "endpoint": "GET /api/info/daily_digest",
+      "user_id": "074e2857-7d13-4bd1-94bc-e74e0b1b9533"
+    }
+  },
+  {
+    "timestamp": "2026-05-17T02:40:18.471172",
+    "type": "API_HIT",
+    "data": {
+      "endpoint": "POST /api/info/sync",
+      "user_id": "074e2857-7d13-4bd1-94bc-e74e0b1b9533"
+    }
+  },
+  {
+    "timestamp": "2026-05-17T02:40:18.188294",
+    "type": "API_HIT",
+    "data": {
+      "endpoint": "POST /api/info/sync",
+      "user_id": "074e2857-7d13-4bd1-94bc-e74e0b1b9533"
+    }
+  },
+  {
+    "timestamp": "2026-05-17T02:40:17.758842",
+    "type": "API_HIT",
+    "data": {
+      "endpoint": "GET /api/info/daily_digest",
+      "user_id": "074e2857-7d13-4bd1-94bc-e74e0b1b9533"
+    }
+  },
+  {
+    "timestamp": "2026-05-17T02:40:17.251340",
+    "type": "API_HIT",
+    "data": {
+      "endpoint": "GET /api/info/daily_digest",
+      "user_id": "074e2857-7d13-4bd1-94bc-e74e0b1b9533"
+    }
+  },
+  {
+    "timestamp": "2026-05-17T02:39:31.501107",
+    "type": "GEMINI_RESPONSE",
+    "data": {
+      "agent": "health_agent",
+      "action": "health_diagnostic",
+      "raw_output": "{\"radar\": [\n    {\"subject\": \"Sleep\", \"A\": 60, \"fullMark\": 100},\n    {\"subject\": \"Focus\", \"A\": 55, \"fullMark\": 100},\n    {\"subject\": \"Diet\", \"A\": 65, \"fullMark\": 100},\n    {\"subject\": \"Activity\", \"A\": 5, \"fullMark\": 100},\n    {\"subject\": \"Stress\", \"A\": 50, \"fullMark\": 100},\n    {\"subject\": \"Recovery\", \"A\": 80, \"fullMark\": 100}\n],\n\"insights\": [\n    {\"title\": \"Complete Inactivity Detected\", \"desc\": \"Your daily metrics report zero steps, zero distance, zero active minutes, and zero calories burned, indicating a day of complete physical inactivity.\"},\n    {\"title\": \"Prioritize Gentle Movement\", \"desc\": \"A complete absence of movement can affect circulation and energy levels. Consider incorporating gentle activities like stretching or very short walks, if appropriate, to support overall well-being.\"}\n]}"
+    }
+  },
+  {
+    "timestamp": "2026-05-17T02:39:28.952485",
+    "type": "GEMINI_RESPONSE",
+    "data": {
+      "agent": "health_agent",
+      "action": "health_diagnostic",
+      "raw_output": "{\n    \"radar\": [\n        {\"subject\": \"Sleep\", \"A\": 50, \"fullMark\": 100},\n        {\"subject\": \"Focus\", \"A\": 50, \"fullMark\": 100},\n        {\"subject\": \"Diet\", \"A\": 50, \"fullMark\": 100},\n        {\"subject\": \"Activity\", \"A\": 0, \"fullMark\": 100},\n        {\"subject\": \"Stress\", \"A\": 50, \"fullMark\": 100},\n        {\"subject\": \"Recovery\", \"A\": 60, \"fullMark\": 100}\n    ],\n    \"insights\": [\n        {\"title\": \"Zero Activity Recorded\", \"desc\": \"Your daily metrics show no steps, distance, calories burned, or active minutes. This indicates a day of complete physical inactivity.\"},\n        {\"title\": \"Assess Inactivity Cause\", \"desc\": \"A full day with no recorded movement could signify a deliberate rest day, a period of illness, or an exceptionally sedentary routine. Reflect on the reason for this inactivity and how it impacts your energy and well-being.\"}\n    ]\n}"
+    }
+  },
+  {
+    "timestamp": "2026-05-17T02:39:28.055145",
+    "type": "GEMINI_RESPONSE",
+    "data": {
+      "agent": "health_agent",
+      "action": "health_diagnostic",
+      "raw_output": "{\"radar\": [\n    {\"subject\": \"Sleep\", \"A\": 50, \"fullMark\": 100},\n    {\"subject\": \"Focus\", \"A\": 50, \"fullMark\": 100},\n    {\"subject\": \"Diet\", \"A\": 50, \"fullMark\": 100},\n    {\"subject\": \"Activity\", \"A\": 5, \"fullMark\": 100},\n    {\"subject\": \"Stress\", \"A\": 50, \"fullMark\": 100},\n    {\"subject\": \"Recovery\", \"A\": 75, \"fullMark\": 100}\n],\n\"insights\": [\n    {\"title\": \"Minimal Physical Activity\", \"desc\": \"Today's metrics show no recorded steps, distance, calories burned, or active minutes, indicating an extremely sedentary day.\"},\n    {\"title\": \"Consider Gentle Movement\", \"desc\": \"While rest is important, a complete lack of physical activity can impact overall energy and mood. Incorporating even light movement could be beneficial for well-being.\"}\n]}"
+    }
+  },
+  {
+    "timestamp": "2026-05-17T02:39:25.575534",
+    "type": "GEMINI_RESPONSE",
+    "data": {
+      "agent": "health_agent",
+      "action": "health_diagnostic",
+      "raw_output": "{\"radar\": [{\"subject\": \"Sleep\", \"A\": 65, \"fullMark\": 100}, {\"subject\": \"Focus\", \"A\": 65, \"fullMark\": 100}, {\"subject\": \"Diet\", \"A\": 60, \"fullMark\": 100}, {\"subject\": \"Activity\", \"A\": 0, \"fullMark\": 100}, {\"subject\": \"Stress\", \"A\": 60, \"fullMark\": 100}, {\"subject\": \"Recovery\", \"A\": 50, \"fullMark\": 100}], \"insights\": [{\"title\": \"Zero Physical Activity Detected\", \"desc\": \"Your daily metrics show 0 steps, 0.0 km distance, 0 kcal burned, and 0 active minutes. This indicates a complete absence of physical activity for the entire day.\"}, {\"title\": \"Review Movement Habits\", \"desc\": \"A full day with no recorded movement can impact overall health and circulation. Consider incorporating light activity, even if it's a rest day, unless advised otherwise for specific recovery needs.\"}]}"
+    }
+  },
+  {
+    "timestamp": "2026-05-17T02:39:19.487233",
+    "type": "GEMINI_CALL",
+    "data": {
+      "agent": "health_agent",
+      "action": "health_diagnostic",
+      "prompt": "\n        You are a highly advanced AI health diagnostic system.\n        Analyze the following daily metrics:\n        Steps: 0\n        Distance: 0.0 km\n        Calories: 0 kcal\n        Active Minutes: 0 min\n        \n        Output EXCLUSIVELY as a valid JSON object. Do not use markdown blocks. The object must match this schema:\n        {\n            \"radar\": [\n                {\"subject\": \"Sleep\", \"A\": <number 0-100>, \"fullMark\": 100},\n                {\"subject\": \"Focus\", \"A\": <number 0-100>, \"fullMark\": 100},\n                {\"subject\": \"Diet\", \"A\": <number 0-100>, \"fullMark\": 100},\n                {\"subject\": \"Activity\", \"A\": <number 0-100>, \"fullMark\": 100},\n                {\"subject\": \"Stress\", \"A\": <number 0-100>, \"fullMark\": 100},\n                {\"subject\": \"Recovery\", \"A\": <number 0-100>, \"fullMark\": 100}\n            ],\n            \"insights\": [\n                {\"title\": \"<Short string>\", \"desc\": \"<Insight description>\"},\n                {\"title\": \"<Short string>\", \"desc\": \"<Insight description>\"}\n            ]\n        }\n        \n        Make the insights realistic and based strictly on the provided data.\n        "
+    }
+  },
+  {
+    "timestamp": "2026-05-17T02:39:18.993040",
+    "type": "GEMINI_CALL",
+    "data": {
+      "agent": "health_agent",
+      "action": "health_diagnostic",
+      "prompt": "\n        You are a highly advanced AI health diagnostic system.\n        Analyze the following daily metrics:\n        Steps: 0\n        Distance: 0.0 km\n        Calories: 0 kcal\n        Active Minutes: 0 min\n        \n        Output EXCLUSIVELY as a valid JSON object. Do not use markdown blocks. The object must match this schema:\n        {\n            \"radar\": [\n                {\"subject\": \"Sleep\", \"A\": <number 0-100>, \"fullMark\": 100},\n                {\"subject\": \"Focus\", \"A\": <number 0-100>, \"fullMark\": 100},\n                {\"subject\": \"Diet\", \"A\": <number 0-100>, \"fullMark\": 100},\n                {\"subject\": \"Activity\", \"A\": <number 0-100>, \"fullMark\": 100},\n                {\"subject\": \"Stress\", \"A\": <number 0-100>, \"fullMark\": 100},\n                {\"subject\": \"Recovery\", \"A\": <number 0-100>, \"fullMark\": 100}\n            ],\n            \"insights\": [\n                {\"title\": \"<Short string>\", \"desc\": \"<Insight description>\"},\n                {\"title\": \"<Short string>\", \"desc\": \"<Insight description>\"}\n            ]\n        }\n        \n        Make the insights realistic and based strictly on the provided data.\n        "
+    }
+  },
+  {
+    "timestamp": "2026-05-17T02:39:18.464369",
+    "type": "GEMINI_CALL",
+    "data": {
+      "agent": "health_agent",
+      "action": "health_diagnostic",
+      "prompt": "\n        You are a highly advanced AI health diagnostic system.\n        Analyze the following daily metrics:\n        Steps: 0\n        Distance: 0.0 km\n        Calories: 0 kcal\n        Active Minutes: 0 min\n        \n        Output EXCLUSIVELY as a valid JSON object. Do not use markdown blocks. The object must match this schema:\n        {\n            \"radar\": [\n                {\"subject\": \"Sleep\", \"A\": <number 0-100>, \"fullMark\": 100},\n                {\"subject\": \"Focus\", \"A\": <number 0-100>, \"fullMark\": 100},\n                {\"subject\": \"Diet\", \"A\": <number 0-100>, \"fullMark\": 100},\n                {\"subject\": \"Activity\", \"A\": <number 0-100>, \"fullMark\": 100},\n                {\"subject\": \"Stress\", \"A\": <number 0-100>, \"fullMark\": 100},\n                {\"subject\": \"Recovery\", \"A\": <number 0-100>, \"fullMark\": 100}\n            ],\n            \"insights\": [\n                {\"title\": \"<Short string>\", \"desc\": \"<Insight description>\"},\n                {\"title\": \"<Short string>\", \"desc\": \"<Insight description>\"}\n            ]\n        }\n        \n        Make the insights realistic and based strictly on the provided data.\n        "
+    }
+  },
+  {
+    "timestamp": "2026-05-17T02:39:16.896846",
+    "type": "GEMINI_CALL",
+    "data": {
+      "agent": "health_agent",
+      "action": "health_diagnostic",
+      "prompt": "\n        You are a highly advanced AI health diagnostic system.\n        Analyze the following daily metrics:\n        Steps: 0\n        Distance: 0.0 km\n        Calories: 0 kcal\n        Active Minutes: 0 min\n        \n        Output EXCLUSIVELY as a valid JSON object. Do not use markdown blocks. The object must match this schema:\n        {\n            \"radar\": [\n                {\"subject\": \"Sleep\", \"A\": <number 0-100>, \"fullMark\": 100},\n                {\"subject\": \"Focus\", \"A\": <number 0-100>, \"fullMark\": 100},\n                {\"subject\": \"Diet\", \"A\": <number 0-100>, \"fullMark\": 100},\n                {\"subject\": \"Activity\", \"A\": <number 0-100>, \"fullMark\": 100},\n                {\"subject\": \"Stress\", \"A\": <number 0-100>, \"fullMark\": 100},\n                {\"subject\": \"Recovery\", \"A\": <number 0-100>, \"fullMark\": 100}\n            ],\n            \"insights\": [\n                {\"title\": \"<Short string>\", \"desc\": \"<Insight description>\"},\n                {\"title\": \"<Short string>\", \"desc\": \"<Insight description>\"}\n            ]\n        }\n        \n        Make the insights realistic and based strictly on the provided data.\n        "
+    }
+  },
+  {
+    "timestamp": "2026-04-30T21:36:26.265155",
+    "type": "GEMINI_RESPONSE",
+    "data": {
+      "agent": "health_agent",
+      "action": "health_diagnostic",
+      "raw_output": "{\n    \"radar\": [\n        {\"subject\": \"Sleep\", \"A\": 50, \"fullMark\": 100},\n        {\"subject\": \"Focus\", \"A\": 50, \"fullMark\": 100},\n        {\"subject\": \"Diet\", \"A\": 50, \"fullMark\": 100},\n        {\"subject\": \"Activity\", \"A\": 75, \"fullMark\": 100},\n        {\"subject\": \"Stress\", \"A\": 50, \"fullMark\": 100},\n        {\"subject\": \"Recovery\", \"A\": 60, \"fullMark\": 100}\n    ],\n    \"insights\": [\n        {\n            \"title\": \"Strong Active Engagement\",\n            \"desc\": \"Your 66 active minutes demonstrate a commendable dedication to daily physical activity, significantly exceeding general health recommendations.\"\n        },\n        {\n            \"title\": \"Optimize Daily Movement\",\n            \"desc\": \"While your active minutes are high, consider integrating more incidental movement to increase your daily step count (5311) and total distance (2.97 km) for broader health benefits.\"\n        }\n    ]\n}"
+    }
+  },
+  {
+    "timestamp": "2026-04-30T21:36:15.218998",
+    "type": "GEMINI_CALL",
+    "data": {
+      "agent": "health_agent",
+      "action": "health_diagnostic",
+      "prompt": "\n        You are a highly advanced AI health diagnostic system.\n        Analyze the following daily metrics:\n        Steps: 5311\n        Distance: 2.97 km\n        Calories: 1269 kcal\n        Active Minutes: 66 min\n        \n        Output EXCLUSIVELY as a valid JSON object. Do not use markdown blocks. The object must match this schema:\n        {\n            \"radar\": [\n                {\"subject\": \"Sleep\", \"A\": <number 0-100>, \"fullMark\": 100},\n                {\"subject\": \"Focus\", \"A\": <number 0-100>, \"fullMark\": 100},\n                {\"subject\": \"Diet\", \"A\": <number 0-100>, \"fullMark\": 100},\n                {\"subject\": \"Activity\", \"A\": <number 0-100>, \"fullMark\": 100},\n                {\"subject\": \"Stress\", \"A\": <number 0-100>, \"fullMark\": 100},\n                {\"subject\": \"Recovery\", \"A\": <number 0-100>, \"fullMark\": 100}\n            ],\n            \"insights\": [\n                {\"title\": \"<Short string>\", \"desc\": \"<Insight description>\"},\n                {\"title\": \"<Short string>\", \"desc\": \"<Insight description>\"}\n            ]\n        }\n        \n        Make the insights realistic and based strictly on the provided data.\n        "
+    }
+  },
+  {
+    "timestamp": "2026-04-30T21:35:39.863197",
+    "type": "GEMINI_RESPONSE",
+    "data": {
+      "agent": "health_agent",
+      "action": "health_diagnostic",
+      "raw_output": "{\n    \"radar\": [\n        {\"subject\": \"Sleep\", \"A\": 50, \"fullMark\": 100},\n        {\"subject\": \"Focus\", \"A\": 50, \"fullMark\": 100},\n        {\"subject\": \"Diet\", \"A\": 45, \"fullMark\": 100},\n        {\"subject\": \"Activity\", \"A\": 70, \"fullMark\": 100},\n        {\"subject\": \"Stress\", \"A\": 50, \"fullMark\": 100},\n        {\"subject\": \"Recovery\", \"A\": 50, \"fullMark\": 100}\n    ],\n    \"insights\": [\n        {\"title\": \"Consistent Active Minutes\", \"desc\": \"You achieved a commendable 66 active minutes today, exceeding general recommendations for daily physical activity. This is a positive indicator of your commitment to movement and can contribute significantly to your overall well-being.\"},\n        {\"title\": \"Review Daily Energy Expenditure\", \"desc\": \"Your total reported calorie expenditure of 1269 kcal is relatively low for an adult, even with your active minutes. Consider if this accurately reflects your overall activity level and dietary intake to ensure adequate energy balance for your goals.\"}\n    ]\n}"
+    }
+  },
+  {
+    "timestamp": "2026-04-30T21:35:33.206850",
+    "type": "GEMINI_RESPONSE",
+    "data": {
+      "agent": "info_agent",
+      "action": "email_summary",
+      "raw_output": "[\n  {\n    \"text\": \"Promotional content received from Affinity (creative lessons), Naukri MINIs (post-interview tips), and ZebPay (crypto market insights).\",\n    \"is_urgent\": false\n  },\n  {\n    \"text\": \"Upstox and Instamart have sent emails requesting your interest in global investing and feedback on their service, respectively.\",\n    \"is_urgent\": false\n  },\n  {\n    \"text\": \"ACTION REQUIRED: Please activate your DW Learn German account using the provided link to proceed with your German lessons.\",\n    \"is_urgent\": true\n  }\n]"
+    }
+  },
+  {
+    "timestamp": "2026-04-30T21:35:28.114003",
+    "type": "GEMINI_CALL",
+    "data": {
+      "agent": "info_agent",
+      "action": "email_summary",
+      "prompt": "You are my sharp executive assistant. Summarize these recent emails in 3-5 concise bullet points. Flag anything that looks urgent or needs my action. Output EXCLUSIVELY as a valid JSON array of objects. Do not use markdown blocks. Each object must have two properties:\n- 'text' (string): The summary text.\n- 'is_urgent' (boolean): True if the email requires urgent action, false otherwise.\n\nEmails:\nFrom: Affinity <marketing@engage.affinity.studio>\nSubject: The easiest way to start creating\nPreview: Short video lessons you can follow along with \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff\n\nFrom: Upstox <noreply@campaigns.upstox.com>\nSubject: Share your interest in global investing \ud83c\udf0d\nPreview: Hello, Ever thought about investing beyond India? Whether you&#39;re already exploring global markets or just curious about it, we&#39;d love to hear your perspective. What interests you about global\n\nFrom: Instamart <noreply@swiggy.in>\nSubject: How else will we know, Abhinav? \ud83e\udd7a\nPreview: Tell us if you \ud83d\udc93 us (or not) \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f\n\nFrom: sprachkurs@dw.com <sprachkurs@dw.com>\nSubject: DW Learn German \u2013 Please activate your account!\nPreview: Dear Abhinav, It&#39;s great that you plan to learn German and have registered for DW Learn German! Just click the following link to activate your account: https://learngerman.dw.com/en/user/register/\n\nFrom: Naukri MINIs <info@minis.naukri.com>\nSubject: Your interview isn\u2019t over yet till this...\nPreview: Hey Abhinav, Usually, you finish your final interview and wait. That&#39;s where most candidates lose. Because the final round isn&#39;t the last step. There&#39;s a small window right after where your\n\nFrom: Team ZebPay <no-reply@email.zebpay.com>\nSubject: Tips to Help You Navigate Today's Crypto Market\u00a0\ud83d\ude80\nPreview: Tap to check the insights \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f"
+    }
+  },
+  {
+    "timestamp": "2026-04-30T21:35:24.350985",
+    "type": "GEMINI_CALL",
+    "data": {
+      "agent": "health_agent",
+      "action": "health_diagnostic",
+      "prompt": "\n        You are a highly advanced AI health diagnostic system.\n        Analyze the following daily metrics:\n        Steps: 5311\n        Distance: 2.97 km\n        Calories: 1269 kcal\n        Active Minutes: 66 min\n        \n        Output EXCLUSIVELY as a valid JSON object. Do not use markdown blocks. The object must match this schema:\n        {\n            \"radar\": [\n                {\"subject\": \"Sleep\", \"A\": <number 0-100>, \"fullMark\": 100},\n                {\"subject\": \"Focus\", \"A\": <number 0-100>, \"fullMark\": 100},\n                {\"subject\": \"Diet\", \"A\": <number 0-100>, \"fullMark\": 100},\n                {\"subject\": \"Activity\", \"A\": <number 0-100>, \"fullMark\": 100},\n                {\"subject\": \"Stress\", \"A\": <number 0-100>, \"fullMark\": 100},\n                {\"subject\": \"Recovery\", \"A\": <number 0-100>, \"fullMark\": 100}\n            ],\n            \"insights\": [\n                {\"title\": \"<Short string>\", \"desc\": \"<Insight description>\"},\n                {\"title\": \"<Short string>\", \"desc\": \"<Insight description>\"}\n            ]\n        }\n        \n        Make the insights realistic and based strictly on the provided data.\n        "
+    }
+  },
+  {
+    "timestamp": "2026-04-30T21:35:15.718441",
+    "type": "API_HIT",
+    "data": {
+      "endpoint": "/api/info/daily_digest",
+      "user_id": "52aac895-44e5-4019-97a3-d7a4d1948bc4"
+    }
+  },
+  {
+    "timestamp": "2026-04-30T21:35:10.827255",
+    "type": "GEMINI_CALL",
+    "data": {
+      "agent": "dashboard_agent",
+      "action": "generate_insights",
+      "prompt": "insights_request"
+    }
+  },
+  {
+    "timestamp": "2026-04-30T21:35:10.793759",
+    "type": "API_HIT",
+    "data": {
+      "endpoint": "/api/dashboard/summary",
+      "user_id": "52aac895-44e5-4019-97a3-d7a4d1948bc4"
+    }
+  },
+  {
+    "timestamp": "2026-04-26T01:23:27.529251",
+    "type": "GEMINI_RESPONSE",
+    "data": {
+      "agent": "info_agent",
+      "action": "email_summary",
+      "raw_output": "[\n  {\n    \"text\": \"Your Twitch account recorded a successful login and a new device login attempt prompted a verification code from Chandigarh, India. Please review these activities.\",\n    \"is_urgent\": false\n  },\n  {\n    \"text\": \"Two third-party OAuth applications (Name.com Education Pack with public access and NC.me with repo/email access) were authorized on your GitHub account. It is recommended to review these connections for security.\",\n    \"is_urgent\": true\n  },\n  {\n    \"text\": \"ZebPay announced an important update regarding the delisting of DEGEN & Base Tokens from Perpetual Futures, which may require your immediate attention if you hold these assets.\",\n    \"is_urgent\": true\n  },\n  {\n    \"text\": \"A promotional email from Nick Singh discussed strategies for career success.\",\n    \"is_urgent\": false\n  }\n]"
+    }
+  },
+  {
+    "timestamp": "2026-04-26T01:23:21.876790",
+    "type": "GEMINI_RESPONSE",
+    "data": {
+      "agent": "health_agent",
+      "action": "health_diagnostic",
+      "raw_output": "{\n    \"radar\": [\n        {\"subject\": \"Sleep\", \"A\": 50, \"fullMark\": 100},\n        {\"subject\": \"Focus\", \"A\": 50, \"fullMark\": 100},\n        {\"subject\": \"Diet\", \"A\": 50, \"fullMark\": 100},\n        {\"subject\": \"Activity\", \"A\": 0, \"fullMark\": 100},\n        {\"subject\": \"Stress\", \"A\": 50, \"fullMark\": 100},\n        {\"subject\": \"Recovery\", \"A\": 50, \"fullMark\": 100}\n    ],\n    \"insights\": [\n        {\n            \"title\": \"Zero Physical Activity\",\n            \"desc\": \"Your daily metrics indicate no recorded steps, distance, active minutes, or calories burned through activity. This suggests a completely sedentary day, far below general health recommendations.\"\n        },\n        {\n            \"title\": \"Implications of Inactivity\",\n            \"desc\": \"While other health factors are unknown, a day with zero physical activity can contribute to poor cardiovascular health and decreased metabolic function. Incorporating even light movement is beneficial.\"\n        }\n    ]\n}"
+    }
+  },
+  {
+    "timestamp": "2026-04-26T01:23:17.189265",
+    "type": "GEMINI_CALL",
+    "data": {
+      "agent": "info_agent",
+      "action": "email_summary",
+      "prompt": "You are my sharp executive assistant. Summarize these recent emails in 3-5 concise bullet points. Flag anything that looks urgent or needs my action. Output EXCLUSIVELY as a valid JSON array of objects. Do not use markdown blocks. Each object must have two properties:\n- 'text' (string): The summary text.\n- 'is_urgent' (boolean): True if the email requires urgent action, false otherwise.\n\nEmails:\nFrom: Twitch <no-reply@twitch.tv>\nSubject: Your Twitch Account - Successful Log-in\nPreview: Twitch Your Twitch Account - Successful Log-in Dear Abhinav1801, This email was generated because a new log-in has occurred for the account Abhinav1801 on April 25, 2026 11:46:00 am PDT (April 25, 2026\n\nFrom: Twitch <account@twitch.tv>\nSubject: Your Twitch Login Verification Code\nPreview: 373497 - Your Twitch Login Verification Code Twitch Hey Abhinav1801, Someone is trying to log in into Twitch with a new device. Location: Chandigarh, Chandigarh, India Device: Windows 10 Browser: Edge\n\nFrom: GitHub <noreply@github.com>\nSubject: [GitHub] A third-party OAuth application has been added to your account\nPreview: Hey abhiii1801! A third-party OAuth application (Name.com Education Pack) with access to public information (read-only) was recently authorized to access your account. Visit https://github.com/settings\n\nFrom: GitHub <noreply@github.com>\nSubject: [GitHub] A third-party OAuth application has been added to your account\nPreview: Hey abhiii1801! A third-party OAuth application (NC.me) with repo and user:email scopes was recently authorized to access your account. Visit https://github.com/settings/connections/applications/\n\nFrom: Nick Singh <hello@nicksingh.com>\nSubject: secret \ud83e\udd2b to career success% FIRSTNAME% (got me FB, Google, $500k book, startup)\nPreview: Abhinav anti-fragility will help your tech career \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c\n\nFrom: Team ZebPay \ud83e\udd93 <no-reply@email.zebpay.com>\nSubject: \ud83d\udd14 Important Update:\u00a0Delisting of DEGEN & Base Tokens from Perpetual Futures\nPreview: Click here to know more... \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff"
+    }
+  },
+  {
+    "timestamp": "2026-04-26T01:23:15.854410",
+    "type": "GEMINI_CALL",
+    "data": {
+      "agent": "health_agent",
+      "action": "health_diagnostic",
+      "prompt": "\n        You are a highly advanced AI health diagnostic system.\n        Analyze the following daily metrics:\n        Steps: 0\n        Distance: 0.0 km\n        Calories: 0 kcal\n        Active Minutes: 0 min\n        \n        Output EXCLUSIVELY as a valid JSON object. Do not use markdown blocks. The object must match this schema:\n        {\n            \"radar\": [\n                {\"subject\": \"Sleep\", \"A\": <number 0-100>, \"fullMark\": 100},\n                {\"subject\": \"Focus\", \"A\": <number 0-100>, \"fullMark\": 100},\n                {\"subject\": \"Diet\", \"A\": <number 0-100>, \"fullMark\": 100},\n                {\"subject\": \"Activity\", \"A\": <number 0-100>, \"fullMark\": 100},\n                {\"subject\": \"Stress\", \"A\": <number 0-100>, \"fullMark\": 100},\n                {\"subject\": \"Recovery\", \"A\": <number 0-100>, \"fullMark\": 100}\n            ],\n            \"insights\": [\n                {\"title\": \"<Short string>\", \"desc\": \"<Insight description>\"},\n                {\"title\": \"<Short string>\", \"desc\": \"<Insight description>\"}\n            ]\n        }\n        \n        Make the insights realistic and based strictly on the provided data.\n        "
+    }
+  },
+  {
+    "timestamp": "2026-04-26T01:23:05.977277",
+    "type": "GEMINI_CALL",
+    "data": {
+      "agent": "dashboard_agent",
+      "action": "generate_insights",
+      "prompt": "insights_request"
+    }
+  },
+  {
+    "timestamp": "2026-04-26T01:23:05.612898",
+    "type": "API_HIT",
+    "data": {
+      "endpoint": "/api/dashboard/summary",
+      "user_id": "52aac895-44e5-4019-97a3-d7a4d1948bc4"
+    }
+  },
+  {
+    "timestamp": "2026-04-26T01:23:03.073745",
+    "type": "API_HIT",
+    "data": {
+      "endpoint": "/api/info/daily_digest",
+      "user_id": "52aac895-44e5-4019-97a3-d7a4d1948bc4"
+    }
+  },
+  {
+    "timestamp": "2026-04-24T22:21:43.466049",
+    "type": "GEMINI_RESPONSE",
+    "data": {
+      "agent": "info_agent",
+      "action": "email_summary",
+      "raw_output": "[\n  {\n    \"text\": \"Two Microsoft account security alerts for ab**8@outlook.com require your immediate attention: one indicating a passkey was added, and another providing a security code. Please verify if these actions were performed by you.\",\n    \"is_urgent\": true\n  },\n  {\n    \"text\": \"Upstox is gathering interest in global investing, and redRail is offering a discount of up to \u20b9300 on train bookings using code REDRAILNEW.\",\n    \"is_urgent\": false\n  },\n  {\n    \"text\": \"The Prime Minister's Office announced a live 'Mann Ki Baat' event on April 26th, and ZebPay sent tips for navigating the crypto market.\",\n    \"is_urgent\": false\n  }\n]"
+    }
+  },
+  {
+    "timestamp": "2026-04-24T22:21:41.977186",
+    "type": "GEMINI_RESPONSE",
+    "data": {
+      "agent": "health_agent",
+      "action": "health_diagnostic",
+      "raw_output": "{\"radar\": [{\"subject\": \"Sleep\", \"A\": 65, \"fullMark\": 100}, {\"subject\": \"Focus\", \"A\": 65, \"fullMark\": 100}, {\"subject\": \"Diet\", \"A\": 40, \"fullMark\": 100}, {\"subject\": \"Activity\", \"A\": 35, \"fullMark\": 100}, {\"subject\": \"Stress\", \"A\": 65, \"fullMark\": 100}, {\"subject\": \"Recovery\", \"A\": 50, \"fullMark\": 100}], \"insights\": [{\"title\": \"Low Daily Movement\", \"desc\": \"Your daily steps (2,661) and distance (1.42 km) are significantly below typical recommendations for general health and well-being. Aim to gradually increase your overall physical activity throughout the day.\"}, {\"title\": \"Caloric Intake Review\", \"desc\": \"The recorded calorie intake of 1,057 kcal is notably low for most adults. Consistently low caloric intake can impact energy levels, metabolic function, and overall nutritional status. Ensure this aligns with your dietary goals.\"}]}"
+    }
+  },
+  {
+    "timestamp": "2026-04-24T22:21:35.929280",
+    "type": "GEMINI_CALL",
+    "data": {
+      "agent": "info_agent",
+      "action": "email_summary",
+      "prompt": "You are my sharp executive assistant. Summarize these recent emails in 3-5 concise bullet points. Flag anything that looks urgent or needs my action. Output EXCLUSIVELY as a valid JSON array of objects. Do not use markdown blocks. Each object must have two properties:\n- 'text' (string): The summary text.\n- 'is_urgent' (boolean): True if the email requires urgent action, false otherwise.\n\nEmails:\nFrom: Upstox <noreply@campaigns.upstox.com>\nSubject: Share your interest in global investing \ud83c\udf0d\nPreview: Hello, Ever thought about investing beyond India? Whether you&#39;re already exploring global markets or just curious about it, we&#39;d love to hear your perspective. What interests you about global\n\nFrom: Microsoft account team <account-security-noreply@accountprotection.microsoft.com>\nSubject: Microsoft account security info was added\nPreview: Microsoft account Security info was added The following security info was recently added to the Microsoft account ab**8@outlook.com: Passkey If this was you, then you can safely ignore this email. If\n\nFrom: Microsoft account team <account-security-noreply@accountprotection.microsoft.com>\nSubject: Personal Microsoft account security code\nPreview: Microsoft account Security code Please use the following security code for your personal Microsoft account ab**8@outlook.com. Security code: 417549 Only enter this code on an official website or app.\n\nFrom: Prime Minister's Office <no-reply@sampark.gov.in>\nSubject: What's new in this month's Mann Ki Baat? Find out LIVE on 26th April!\nPreview: Having trouble reading this email? View it in your mobile/ web browser Share it on Social Media social icon social icon social icon Forward it to a Friend This message was sent to officialabhinavtomar[\n\nFrom: redRail <updates@redrail.redbus.com>\nSubject: Traveller, book before this deal disappears \ud83d\udc47\nPreview: Save up to \u20b9300 on your next train journey with redRail! Use Code: REDRAILNEW and book now! BOOK NOW \u00a9 2026 MakeMyTrip, All Rights Reserved If you wish to opt out of all type of emails, click\n\nFrom: Team ZebPay <no-reply@email.zebpay.com>\nSubject: Tips to Help You Navigate Today's Crypto Market\u00a0\ud83d\ude80\nPreview: Tap to check the insights \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f"
+    }
+  },
+  {
+    "timestamp": "2026-04-24T22:21:33.483556",
+    "type": "GEMINI_CALL",
+    "data": {
+      "agent": "health_agent",
+      "action": "health_diagnostic",
+      "prompt": "\n        You are a highly advanced AI health diagnostic system.\n        Analyze the following daily metrics:\n        Steps: 2661\n        Distance: 1.42 km\n        Calories: 1057 kcal\n        Active Minutes: 39 min\n        \n        Output EXCLUSIVELY as a valid JSON object. Do not use markdown blocks. The object must match this schema:\n        {\n            \"radar\": [\n                {\"subject\": \"Sleep\", \"A\": <number 0-100>, \"fullMark\": 100},\n                {\"subject\": \"Focus\", \"A\": <number 0-100>, \"fullMark\": 100},\n                {\"subject\": \"Diet\", \"A\": <number 0-100>, \"fullMark\": 100},\n                {\"subject\": \"Activity\", \"A\": <number 0-100>, \"fullMark\": 100},\n                {\"subject\": \"Stress\", \"A\": <number 0-100>, \"fullMark\": 100},\n                {\"subject\": \"Recovery\", \"A\": <number 0-100>, \"fullMark\": 100}\n            ],\n            \"insights\": [\n                {\"title\": \"<Short string>\", \"desc\": \"<Insight description>\"},\n                {\"title\": \"<Short string>\", \"desc\": \"<Insight description>\"}\n            ]\n        }\n        \n        Make the insights realistic and based strictly on the provided data.\n        "
+    }
+  },
+  {
+    "timestamp": "2026-04-24T22:21:23.093425",
+    "type": "API_HIT",
+    "data": {
+      "endpoint": "/api/info/daily_digest",
+      "user_id": "52aac895-44e5-4019-97a3-d7a4d1948bc4"
+    }
+  },
+  {
+    "timestamp": "2026-04-24T22:21:18.910011",
+    "type": "GEMINI_CALL",
+    "data": {
+      "agent": "dashboard_agent",
+      "action": "generate_insights",
+      "prompt": "insights_request"
+    }
+  },
+  {
+    "timestamp": "2026-04-24T22:21:18.886660",
+    "type": "API_HIT",
+    "data": {
+      "endpoint": "/api/dashboard/summary",
+      "user_id": "52aac895-44e5-4019-97a3-d7a4d1948bc4"
+    }
+  },
+  {
+    "timestamp": "2026-04-24T21:10:46.076634",
+    "type": "GEMINI_CALL",
+    "data": {
+      "agent": "dashboard_agent",
+      "action": "generate_insights",
+      "prompt": "insights_request"
+    }
+  },
+  {
+    "timestamp": "2026-04-24T21:10:46.069756",
+    "type": "API_HIT",
+    "data": {
+      "endpoint": "/api/dashboard/summary",
+      "user_id": "52aac895-44e5-4019-97a3-d7a4d1948bc4"
+    }
+  },
+  {
+    "timestamp": "2026-04-24T21:09:38.918001",
+    "type": "GEMINI_RESPONSE",
+    "data": {
+      "agent": "info_agent",
+      "action": "email_summary",
+      "raw_output": "[\n  {\n    \"text\": \"URGENT: A passkey was recently added to your Microsoft account (ab**8@outlook.com). Please verify immediately if this change was authorized by you to prevent potential security compromises.\",\n    \"is_urgent\": true\n  },\n  {\n    \"text\": \"You also received a security code (417549) for your Microsoft account (ab**8@outlook.com), likely for a login or verification attempt.\",\n    \"is_urgent\": false\n  },\n  {\n    \"text\": \"Upstox is gauging interest in global investing, and ZebPay provided tips for navigating the crypto market.\",\n    \"is_urgent\": false\n  },\n  {\n    \"text\": \"RedRail sent a promotional offer for train travel (save up to \u20b9300), and the Prime Minister's Office announced a live 'Mann Ki Baat' broadcast on April 26th.\",\n    \"is_urgent\": false\n  }\n]"
+    }
+  },
+  {
+    "timestamp": "2026-04-24T21:09:30.155164",
+    "type": "GEMINI_CALL",
+    "data": {
+      "agent": "info_agent",
+      "action": "email_summary",
+      "prompt": "You are my sharp executive assistant. Summarize these recent emails in 3-5 concise bullet points. Flag anything that looks urgent or needs my action. Output EXCLUSIVELY as a valid JSON array of objects. Do not use markdown blocks. Each object must have two properties:\n- 'text' (string): The summary text.\n- 'is_urgent' (boolean): True if the email requires urgent action, false otherwise.\n\nEmails:\nFrom: Upstox <noreply@campaigns.upstox.com>\nSubject: Share your interest in global investing \ud83c\udf0d\nPreview: Hello, Ever thought about investing beyond India? Whether you&#39;re already exploring global markets or just curious about it, we&#39;d love to hear your perspective. What interests you about global\n\nFrom: Microsoft account team <account-security-noreply@accountprotection.microsoft.com>\nSubject: Microsoft account security info was added\nPreview: Microsoft account Security info was added The following security info was recently added to the Microsoft account ab**8@outlook.com: Passkey If this was you, then you can safely ignore this email. If\n\nFrom: Microsoft account team <account-security-noreply@accountprotection.microsoft.com>\nSubject: Personal Microsoft account security code\nPreview: Microsoft account Security code Please use the following security code for your personal Microsoft account ab**8@outlook.com. Security code: 417549 Only enter this code on an official website or app.\n\nFrom: Prime Minister's Office <no-reply@sampark.gov.in>\nSubject: What's new in this month's Mann Ki Baat? Find out LIVE on 26th April!\nPreview: Having trouble reading this email? View it in your mobile/ web browser Share it on Social Media social icon social icon social icon Forward it to a Friend This message was sent to officialabhinavtomar[\n\nFrom: redRail <updates@redrail.redbus.com>\nSubject: Traveller, book before this deal disappears \ud83d\udc47\nPreview: Save up to \u20b9300 on your next train journey with redRail! Use Code: REDRAILNEW and book now! BOOK NOW \u00a9 2026 MakeMyTrip, All Rights Reserved If you wish to opt out of all type of emails, click\n\nFrom: Team ZebPay <no-reply@email.zebpay.com>\nSubject: Tips to Help You Navigate Today's Crypto Market\u00a0\ud83d\ude80\nPreview: Tap to check the insights \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f"
+    }
+  },
+  {
+    "timestamp": "2026-04-24T21:09:18.857345",
+    "type": "API_HIT",
+    "data": {
+      "endpoint": "/api/info/daily_digest",
+      "user_id": "52aac895-44e5-4019-97a3-d7a4d1948bc4"
+    }
+  },
+  {
+    "timestamp": "2026-04-24T21:08:47.793235",
+    "type": "GEMINI_RESPONSE",
+    "data": {
+      "agent": "health_agent",
+      "action": "health_diagnostic",
+      "raw_output": "{\"radar\": [{\"subject\": \"Sleep\", \"A\": 45, \"fullMark\": 100}, {\"subject\": \"Focus\", \"A\": 55, \"fullMark\": 100}, {\"subject\": \"Diet\", \"A\": 25, \"fullMark\": 100}, {\"subject\": \"Activity\", \"A\": 35, \"fullMark\": 100}, {\"subject\": \"Stress\", \"A\": 50, \"fullMark\": 100}, {\"subject\": \"Recovery\", \"A\": 40, \"fullMark\": 100}], \"insights\": [{\"title\": \"Low Caloric Intake Detected\", \"desc\": \"Your recorded caloric intake of 1057 kcal is notably low for an adult. Sustained low calorie intake can lead to fatigue, nutrient deficiencies, and metabolic slowdown. Consider evaluating your dietary tracking accuracy or consulting with a nutritionist to ensure adequate energy and nutrient intake.\"}, {\"title\": \"Sedentary Tendencies Observed\", \"desc\": \"With only 2661 steps and 1.42 km, your overall daily movement is quite low, despite 39 active minutes. Aim to gradually increase your daily step count towards recommended targets (e.g., 7,000-10,000 steps) to improve cardiovascular health and overall well-being.\"}]}"
+    }
+  },
+  {
+    "timestamp": "2026-04-24T21:08:38.508380",
+    "type": "GEMINI_CALL",
+    "data": {
+      "agent": "health_agent",
+      "action": "health_diagnostic",
+      "prompt": "\n        You are a highly advanced AI health diagnostic system.\n        Analyze the following daily metrics:\n        Steps: 2661\n        Distance: 1.42 km\n        Calories: 1057 kcal\n        Active Minutes: 39 min\n        \n        Output EXCLUSIVELY as a valid JSON object. Do not use markdown blocks. The object must match this schema:\n        {\n            \"radar\": [\n                {\"subject\": \"Sleep\", \"A\": <number 0-100>, \"fullMark\": 100},\n                {\"subject\": \"Focus\", \"A\": <number 0-100>, \"fullMark\": 100},\n                {\"subject\": \"Diet\", \"A\": <number 0-100>, \"fullMark\": 100},\n                {\"subject\": \"Activity\", \"A\": <number 0-100>, \"fullMark\": 100},\n                {\"subject\": \"Stress\", \"A\": <number 0-100>, \"fullMark\": 100},\n                {\"subject\": \"Recovery\", \"A\": <number 0-100>, \"fullMark\": 100}\n            ],\n            \"insights\": [\n                {\"title\": \"<Short string>\", \"desc\": \"<Insight description>\"},\n                {\"title\": \"<Short string>\", \"desc\": \"<Insight description>\"}\n            ]\n        }\n        \n        Make the insights realistic and based strictly on the provided data.\n        "
+    }
+  },
+  {
+    "timestamp": "2026-04-24T21:08:25.702892",
+    "type": "GEMINI_CALL",
+    "data": {
+      "agent": "dashboard_agent",
+      "action": "generate_insights",
+      "prompt": "insights_request"
+    }
+  },
+  {
+    "timestamp": "2026-04-24T21:08:24.580551",
+    "type": "API_HIT",
+    "data": {
+      "endpoint": "/api/dashboard/summary",
+      "user_id": "52aac895-44e5-4019-97a3-d7a4d1948bc4"
+    }
+  },
+  {
+    "timestamp": "2026-04-24T21:07:56.558593",
+    "type": "GEMINI_RESPONSE",
+    "data": {
+      "agent": "health_agent",
+      "action": "health_diagnostic",
+      "raw_output": "{\"radar\": [\n    {\"subject\": \"Sleep\", \"A\": 50, \"fullMark\": 100},\n    {\"subject\": \"Focus\", \"A\": 50, \"fullMark\": 100},\n    {\"subject\": \"Diet\", \"A\": 50, \"fullMark\": 100},\n    {\"subject\": \"Activity\", \"A\": 32, \"fullMark\": 100},\n    {\"subject\": \"Stress\", \"A\": 50, \"fullMark\": 100},\n    {\"subject\": \"Recovery\", \"A\": 60, \"fullMark\": 100}\n],\n\"insights\": [\n    {\"title\": \"Low Daily Movement\", \"desc\": \"Your daily steps (2661) and distance (1.42 km) are significantly below recommended levels for general health. While you recorded 39 active minutes, increasing overall movement throughout the day could provide substantial benefits.\"},\n    {\"title\": \"Reduced Energy Expenditure\", \"desc\": \"The 1057 kcal burned suggests a low overall energy expenditure for the day. This aligns with the lower step count and distance, indicating a generally sedentary period and an opportunity to boost your activity.\"}\n]}"
+    }
+  },
+  {
+    "timestamp": "2026-04-24T21:07:45.259626",
+    "type": "GEMINI_CALL",
+    "data": {
+      "agent": "health_agent",
+      "action": "health_diagnostic",
+      "prompt": "\n        You are a highly advanced AI health diagnostic system.\n        Analyze the following daily metrics:\n        Steps: 2661\n        Distance: 1.42 km\n        Calories: 1057 kcal\n        Active Minutes: 39 min\n        \n        Output EXCLUSIVELY as a valid JSON object. Do not use markdown blocks. The object must match this schema:\n        {\n            \"radar\": [\n                {\"subject\": \"Sleep\", \"A\": <number 0-100>, \"fullMark\": 100},\n                {\"subject\": \"Focus\", \"A\": <number 0-100>, \"fullMark\": 100},\n                {\"subject\": \"Diet\", \"A\": <number 0-100>, \"fullMark\": 100},\n                {\"subject\": \"Activity\", \"A\": <number 0-100>, \"fullMark\": 100},\n                {\"subject\": \"Stress\", \"A\": <number 0-100>, \"fullMark\": 100},\n                {\"subject\": \"Recovery\", \"A\": <number 0-100>, \"fullMark\": 100}\n            ],\n            \"insights\": [\n                {\"title\": \"<Short string>\", \"desc\": \"<Insight description>\"},\n                {\"title\": \"<Short string>\", \"desc\": \"<Insight description>\"}\n            ]\n        }\n        \n        Make the insights realistic and based strictly on the provided data.\n        "
+    }
+  },
+  {
+    "timestamp": "2026-04-24T21:06:17.000676",
+    "type": "GEMINI_RESPONSE",
+    "data": {
+      "agent": "health_agent",
+      "action": "health_diagnostic",
+      "raw_output": "{\n    \"radar\": [\n        {\"subject\": \"Sleep\", \"A\": 50, \"fullMark\": 100},\n        {\"subject\": \"Focus\", \"A\": 50, \"fullMark\": 100},\n        {\"subject\": \"Diet\", \"A\": 50, \"fullMark\": 100},\n        {\"subject\": \"Activity\", \"A\": 5, \"fullMark\": 100},\n        {\"subject\": \"Stress\", \"A\": 50, \"fullMark\": 100},\n        {\"subject\": \"Recovery\", \"A\": 40, \"fullMark\": 100}\n    ],\n    \"insights\": [\n        {\n            \"title\": \"Zero Physical Activity Detected\",\n            \"desc\": \"Your daily metrics show 0 steps, 0.0 km distance, 0 kcal burned, and 0 active minutes. This indicates a complete absence of physical movement throughout the day.\"\n        },\n        {\n            \"title\": \"Impact on Well-being\",\n            \"desc\": \"While occasional rest days are beneficial, zero activity can affect metabolic health and overall energy levels. Consider the reasons for this complete inactivity and if it aligns with your health goals.\"\n        }\n    ]\n}"
+    }
+  },
+  {
+    "timestamp": "2026-04-24T21:06:04.726945",
+    "type": "GEMINI_CALL",
+    "data": {
+      "agent": "health_agent",
+      "action": "health_diagnostic",
+      "prompt": "\n        You are a highly advanced AI health diagnostic system.\n        Analyze the following daily metrics:\n        Steps: 0\n        Distance: 0.0 km\n        Calories: 0 kcal\n        Active Minutes: 0 min\n        \n        Output EXCLUSIVELY as a valid JSON object. Do not use markdown blocks. The object must match this schema:\n        {\n            \"radar\": [\n                {\"subject\": \"Sleep\", \"A\": <number 0-100>, \"fullMark\": 100},\n                {\"subject\": \"Focus\", \"A\": <number 0-100>, \"fullMark\": 100},\n                {\"subject\": \"Diet\", \"A\": <number 0-100>, \"fullMark\": 100},\n                {\"subject\": \"Activity\", \"A\": <number 0-100>, \"fullMark\": 100},\n                {\"subject\": \"Stress\", \"A\": <number 0-100>, \"fullMark\": 100},\n                {\"subject\": \"Recovery\", \"A\": <number 0-100>, \"fullMark\": 100}\n            ],\n            \"insights\": [\n                {\"title\": \"<Short string>\", \"desc\": \"<Insight description>\"},\n                {\"title\": \"<Short string>\", \"desc\": \"<Insight description>\"}\n            ]\n        }\n        \n        Make the insights realistic and based strictly on the provided data.\n        "
+    }
+  },
+  {
+    "timestamp": "2026-04-24T21:03:48.504885",
+    "type": "GEMINI_RESPONSE",
+    "data": {
+      "agent": "health_agent",
+      "action": "health_diagnostic",
+      "raw_output": "{\n    \"radar\": [\n        {\"subject\": \"Sleep\", \"A\": 50, \"fullMark\": 100},\n        {\"subject\": \"Focus\", \"A\": 50, \"fullMark\": 100},\n        {\"subject\": \"Diet\", \"A\": 50, \"fullMark\": 100},\n        {\"subject\": \"Activity\", \"A\": 0, \"fullMark\": 100},\n        {\"subject\": \"Stress\", \"A\": 50, \"fullMark\": 100},\n        {\"subject\": \"Recovery\", \"A\": 30, \"fullMark\": 100}\n    ],\n    \"insights\": [\n        {\n            \"title\": \"Extreme Sedentariness Observed\",\n            \"desc\": \"Your daily metrics report zero steps, distance, calories burned, and active minutes. This indicates a complete absence of physical activity throughout the day, suggesting a highly sedentary period.\"\n        },\n        {\n            \"title\": \"No Physical Activity Contribution\",\n            \"desc\": \"With no recorded movement, there was no contribution from physical activity towards calorie expenditure or cardiovascular health on this day. It's important to understand the reason behind this inactivity.\"\n        }\n    ]\n}"
+    }
+  },
+  {
+    "timestamp": "2026-04-24T21:03:33.032239",
+    "type": "GEMINI_CALL",
+    "data": {
+      "agent": "health_agent",
+      "action": "health_diagnostic",
+      "prompt": "\n        You are a highly advanced AI health diagnostic system.\n        Analyze the following daily metrics:\n        Steps: 0\n        Distance: 0.0 km\n        Calories: 0 kcal\n        Active Minutes: 0 min\n        \n        Output EXCLUSIVELY as a valid JSON object. Do not use markdown blocks. The object must match this schema:\n        {\n            \"radar\": [\n                {\"subject\": \"Sleep\", \"A\": <number 0-100>, \"fullMark\": 100},\n                {\"subject\": \"Focus\", \"A\": <number 0-100>, \"fullMark\": 100},\n                {\"subject\": \"Diet\", \"A\": <number 0-100>, \"fullMark\": 100},\n                {\"subject\": \"Activity\", \"A\": <number 0-100>, \"fullMark\": 100},\n                {\"subject\": \"Stress\", \"A\": <number 0-100>, \"fullMark\": 100},\n                {\"subject\": \"Recovery\", \"A\": <number 0-100>, \"fullMark\": 100}\n            ],\n            \"insights\": [\n                {\"title\": \"<Short string>\", \"desc\": \"<Insight description>\"},\n                {\"title\": \"<Short string>\", \"desc\": \"<Insight description>\"}\n            ]\n        }\n        \n        Make the insights realistic and based strictly on the provided data.\n        "
+    }
+  },
+  {
+    "timestamp": "2026-04-24T21:02:51.231778",
+    "type": "GEMINI_RESPONSE",
+    "data": {
+      "agent": "health_agent",
+      "action": "health_diagnostic",
+      "raw_output": "{\n    \"radar\": [\n        {\"subject\": \"Sleep\", \"A\": 50, \"fullMark\": 100},\n        {\"subject\": \"Focus\", \"A\": 50, \"fullMark\": 100},\n        {\"subject\": \"Diet\", \"A\": 50, \"fullMark\": 100},\n        {\"subject\": \"Activity\", \"A\": 5, \"fullMark\": 100},\n        {\"subject\": \"Stress\", \"A\": 50, \"fullMark\": 100},\n        {\"subject\": \"Recovery\", \"A\": 50, \"fullMark\": 100}\n    ],\n    \"insights\": [\n        {\n            \"title\": \"Extremely Low Activity\",\n            \"desc\": \"Your daily metrics show 0 steps, 0.0 km distance, 0 active minutes, and 0 calories burned. This indicates a day with no recorded physical activity.\"\n        },\n        {\n            \"title\": \"Prioritize Movement\",\n            \"desc\": \"A complete absence of physical activity, as observed, can impact various aspects of health. Consider integrating even light movement into your daily routine to support overall well-being.\"\n        }\n    ]\n}"
+    }
+  },
+  {
+    "timestamp": "2026-04-24T21:02:47.014314",
+    "type": "GEMINI_RESPONSE",
+    "data": {
+      "agent": "info_agent",
+      "action": "email_summary",
+      "raw_output": "[\n  {\n    \"text\": \"Your Microsoft account (ab**8@outlook.com) triggered two security alerts: a passkey was added and a security code (417549) was issued. Please verify these actions immediately to ensure your account security.\",\n    \"is_urgent\": true\n  },\n  {\n    \"text\": \"Upstox is soliciting interest in global investing, and ZebPay provided tips for navigating the current crypto market.\",\n    \"is_urgent\": false\n  },\n  {\n    \"text\": \"redRail has a limited-time offer for train bookings (save up to \u20b9300), and the Prime Minister's Office announced the next 'Mann Ki Baat' session for April 26th.\",\n    \"is_urgent\": false\n  }\n]"
+    }
+  },
+  {
+    "timestamp": "2026-04-24T21:02:39.765045",
+    "type": "GEMINI_CALL",
+    "data": {
+      "agent": "info_agent",
+      "action": "email_summary",
+      "prompt": "You are my sharp executive assistant. Summarize these recent emails in 3-5 concise bullet points. Flag anything that looks urgent or needs my action. Output EXCLUSIVELY as a valid JSON array of objects. Do not use markdown blocks. Each object must have two properties:\n- 'text' (string): The summary text.\n- 'is_urgent' (boolean): True if the email requires urgent action, false otherwise.\n\nEmails:\nFrom: Upstox <noreply@campaigns.upstox.com>\nSubject: Share your interest in global investing \ud83c\udf0d\nPreview: Hello, Ever thought about investing beyond India? Whether you&#39;re already exploring global markets or just curious about it, we&#39;d love to hear your perspective. What interests you about global\n\nFrom: Microsoft account team <account-security-noreply@accountprotection.microsoft.com>\nSubject: Microsoft account security info was added\nPreview: Microsoft account Security info was added The following security info was recently added to the Microsoft account ab**8@outlook.com: Passkey If this was you, then you can safely ignore this email. If\n\nFrom: Microsoft account team <account-security-noreply@accountprotection.microsoft.com>\nSubject: Personal Microsoft account security code\nPreview: Microsoft account Security code Please use the following security code for your personal Microsoft account ab**8@outlook.com. Security code: 417549 Only enter this code on an official website or app.\n\nFrom: Prime Minister's Office <no-reply@sampark.gov.in>\nSubject: What's new in this month's Mann Ki Baat? Find out LIVE on 26th April!\nPreview: Having trouble reading this email? View it in your mobile/ web browser Share it on Social Media social icon social icon social icon Forward it to a Friend This message was sent to officialabhinavtomar[\n\nFrom: redRail <updates@redrail.redbus.com>\nSubject: Traveller, book before this deal disappears \ud83d\udc47\nPreview: Save up to \u20b9300 on your next train journey with redRail! Use Code: REDRAILNEW and book now! BOOK NOW \u00a9 2026 MakeMyTrip, All Rights Reserved If you wish to opt out of all type of emails, click\n\nFrom: Team ZebPay <no-reply@email.zebpay.com>\nSubject: Tips to Help You Navigate Today's Crypto Market\u00a0\ud83d\ude80\nPreview: Tap to check the insights \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f"
+    }
+  },
+  {
+    "timestamp": "2026-04-24T21:02:39.660257",
+    "type": "GEMINI_CALL",
+    "data": {
+      "agent": "health_agent",
+      "action": "health_diagnostic",
+      "prompt": "\n        You are a highly advanced AI health diagnostic system.\n        Analyze the following daily metrics:\n        Steps: 0\n        Distance: 0.0 km\n        Calories: 0 kcal\n        Active Minutes: 0 min\n        \n        Output EXCLUSIVELY as a valid JSON object. Do not use markdown blocks. The object must match this schema:\n        {\n            \"radar\": [\n                {\"subject\": \"Sleep\", \"A\": <number 0-100>, \"fullMark\": 100},\n                {\"subject\": \"Focus\", \"A\": <number 0-100>, \"fullMark\": 100},\n                {\"subject\": \"Diet\", \"A\": <number 0-100>, \"fullMark\": 100},\n                {\"subject\": \"Activity\", \"A\": <number 0-100>, \"fullMark\": 100},\n                {\"subject\": \"Stress\", \"A\": <number 0-100>, \"fullMark\": 100},\n                {\"subject\": \"Recovery\", \"A\": <number 0-100>, \"fullMark\": 100}\n            ],\n            \"insights\": [\n                {\"title\": \"<Short string>\", \"desc\": \"<Insight description>\"},\n                {\"title\": \"<Short string>\", \"desc\": \"<Insight description>\"}\n            ]\n        }\n        \n        Make the insights realistic and based strictly on the provided data.\n        "
+    }
+  },
+  {
+    "timestamp": "2026-04-24T21:02:27.633787",
+    "type": "API_HIT",
+    "data": {
+      "endpoint": "/api/info/daily_digest",
+      "user_id": "52aac895-44e5-4019-97a3-d7a4d1948bc4"
+    }
+  },
+  {
+    "timestamp": "2026-04-24T21:02:23.730872",
+    "type": "GEMINI_CALL",
+    "data": {
+      "agent": "dashboard_agent",
+      "action": "generate_insights",
+      "prompt": "insights_request"
+    }
+  },
+  {
+    "timestamp": "2026-04-24T21:02:23.709458",
+    "type": "API_HIT",
+    "data": {
+      "endpoint": "/api/dashboard/summary",
+      "user_id": "52aac895-44e5-4019-97a3-d7a4d1948bc4"
+    }
+  },
+  {
+    "timestamp": "2026-04-24T20:55:53.715832",
+    "type": "GEMINI_RESPONSE",
+    "data": {
+      "agent": "health_agent",
+      "action": "health_diagnostic",
+      "raw_output": "{\n    \"radar\": [\n        {\"subject\": \"Sleep\", \"A\": 50, \"fullMark\": 100},\n        {\"subject\": \"Focus\", \"A\": 50, \"fullMark\": 100},\n        {\"subject\": \"Diet\", \"A\": 50, \"fullMark\": 100},\n        {\"subject\": \"Activity\", \"A\": 30, \"fullMark\": 100},\n        {\"subject\": \"Stress\", \"A\": 50, \"fullMark\": 100},\n        {\"subject\": \"Recovery\", \"A\": 50, \"fullMark\": 100}\n    ],\n    \"insights\": [\n        {\n            \"title\": \"Low Daily Movement\",\n            \"desc\": \"Your daily steps (2661) and distance (1.42 km) are significantly below recommended guidelines for general health, indicating a largely sedentary day despite logging 39 active minutes. This suggests activity may be low intensity or fragmented.\"\n        },\n        {\n            \"title\": \"Opportunity for Activity Increase\",\n            \"desc\": \"To enhance cardiovascular health and overall well-being, aim to gradually increase your daily step count and integrate more moderate-intensity activities. Incorporating short walks or breaking up sedentary periods could be beneficial.\"\n        }\n    ]\n}"
+    }
+  },
+  {
+    "timestamp": "2026-04-24T20:55:50.266917",
+    "type": "GEMINI_RESPONSE",
+    "data": {
+      "agent": "info_agent",
+      "action": "email_summary",
+      "raw_output": "[\n  {\n    \"text\": \"Your Microsoft account (ab**8@outlook.com) security info was updated with a Passkey, and a security code (417549) was issued. Please verify these actions immediately to ensure account security, especially if you did not initiate them.\",\n    \"is_urgent\": true\n  },\n  {\n    \"text\": \"Upstox is asking about your interest in global investing, and ZebPay sent tips for navigating today's crypto market.\",\n    \"is_urgent\": false\n  },\n  {\n    \"text\": \"The Prime Minister's Office announced a live 'Mann Ki Baat' broadcast on April 26th. Separately, redRail sent a promotional offer to save up to \u20b9300 on your next train journey.\",\n    \"is_urgent\": false\n  }\n]"
+    }
+  },
+  {
+    "timestamp": "2026-04-24T20:55:41.880295",
+    "type": "GEMINI_CALL",
+    "data": {
+      "agent": "info_agent",
+      "action": "email_summary",
+      "prompt": "You are my sharp executive assistant. Summarize these recent emails in 3-5 concise bullet points. Flag anything that looks urgent or needs my action. Output EXCLUSIVELY as a valid JSON array of objects. Do not use markdown blocks. Each object must have two properties:\n- 'text' (string): The summary text.\n- 'is_urgent' (boolean): True if the email requires urgent action, false otherwise.\n\nEmails:\nFrom: Upstox <noreply@campaigns.upstox.com>\nSubject: Share your interest in global investing \ud83c\udf0d\nPreview: Hello, Ever thought about investing beyond India? Whether you&#39;re already exploring global markets or just curious about it, we&#39;d love to hear your perspective. What interests you about global\n\nFrom: Microsoft account team <account-security-noreply@accountprotection.microsoft.com>\nSubject: Microsoft account security info was added\nPreview: Microsoft account Security info was added The following security info was recently added to the Microsoft account ab**8@outlook.com: Passkey If this was you, then you can safely ignore this email. If\n\nFrom: Microsoft account team <account-security-noreply@accountprotection.microsoft.com>\nSubject: Personal Microsoft account security code\nPreview: Microsoft account Security code Please use the following security code for your personal Microsoft account ab**8@outlook.com. Security code: 417549 Only enter this code on an official website or app.\n\nFrom: Prime Minister's Office <no-reply@sampark.gov.in>\nSubject: What's new in this month's Mann Ki Baat? Find out LIVE on 26th April!\nPreview: Having trouble reading this email? View it in your mobile/ web browser Share it on Social Media social icon social icon social icon Forward it to a Friend This message was sent to officialabhinavtomar[\n\nFrom: redRail <updates@redrail.redbus.com>\nSubject: Traveller, book before this deal disappears \ud83d\udc47\nPreview: Save up to \u20b9300 on your next train journey with redRail! Use Code: REDRAILNEW and book now! BOOK NOW \u00a9 2026 MakeMyTrip, All Rights Reserved If you wish to opt out of all type of emails, click\n\nFrom: Team ZebPay <no-reply@email.zebpay.com>\nSubject: Tips to Help You Navigate Today's Crypto Market\u00a0\ud83d\ude80\nPreview: Tap to check the insights \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f \ufeff \u034f"
+    }
+  },
+  {
+    "timestamp": "2026-04-24T20:55:41.089540",
+    "type": "GEMINI_CALL",
+    "data": {
+      "agent": "health_agent",
+      "action": "health_diagnostic",
+      "prompt": "\n        You are a highly advanced AI health diagnostic system.\n        Analyze the following daily metrics:\n        Steps: 2661\n        Distance: 1.42 km\n        Calories: 1057 kcal\n        Active Minutes: 39 min\n        \n        Output EXCLUSIVELY as a valid JSON object. Do not use markdown blocks. The object must match this schema:\n        {\n            \"radar\": [\n                {\"subject\": \"Sleep\", \"A\": <number 0-100>, \"fullMark\": 100},\n                {\"subject\": \"Focus\", \"A\": <number 0-100>, \"fullMark\": 100},\n                {\"subject\": \"Diet\", \"A\": <number 0-100>, \"fullMark\": 100},\n                {\"subject\": \"Activity\", \"A\": <number 0-100>, \"fullMark\": 100},\n                {\"subject\": \"Stress\", \"A\": <number 0-100>, \"fullMark\": 100},\n                {\"subject\": \"Recovery\", \"A\": <number 0-100>, \"fullMark\": 100}\n            ],\n            \"insights\": [\n                {\"title\": \"<Short string>\", \"desc\": \"<Insight description>\"},\n                {\"title\": \"<Short string>\", \"desc\": \"<Insight description>\"}\n            ]\n        }\n        \n        Make the insights realistic and based strictly on the provided data.\n        "
+    }
+  },
+  {
+    "timestamp": "2026-04-24T20:55:30.050890",
+    "type": "API_HIT",
+    "data": {
+      "endpoint": "/api/info/daily_digest",
+      "user_id": "52aac895-44e5-4019-97a3-d7a4d1948bc4"
+    }
+  },
+  {
+    "timestamp": "2026-04-24T20:55:25.996968",
+    "type": "GEMINI_CALL",
+    "data": {
+      "agent": "dashboard_agent",
+      "action": "generate_insights",
+      "prompt": "insights_request"
+    }
+  },
+  {
+    "timestamp": "2026-04-24T20:55:25.974325",
+    "type": "API_HIT",
+    "data": {
+      "endpoint": "/api/dashboard/summary",
+      "user_id": "52aac895-44e5-4019-97a3-d7a4d1948bc4"
+    }
+  }
+]97a3-d7a4d1948bc4"
+    }
+  }
+]

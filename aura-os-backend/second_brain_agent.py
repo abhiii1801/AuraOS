@@ -42,20 +42,22 @@ def search_second_brain(query_text: str, user_id: str, supabase, genai_client, l
 
 def process_second_brain_action(params, supabase, user_id, genai_client):
     """Processes ingesting a new note to the vault."""
-    content = params.get("content", "Empty note")
+    headline = params.get("headline", "Note")
+    raw_prompt = params.get("raw_prompt", params.get("content", "Empty note"))
     category = params.get("category", "Misc")
     tags = params.get("tags", [])
 
     reply_text = f"🧠 Saving to Vault [{category}]...\n"
     
-    vector_array = get_embedding(content, genai_client)
+    vector_array = get_embedding(raw_prompt, genai_client)
     
     if not vector_array:
          reply_text += "⚠️ Failed to generate AI embedding. Note not saved.\n"
     else:
         supabase.table("second_brain").insert({
             "user_id": user_id,
-            "content": content,
+            "content": headline,
+            "raw_prompt": raw_prompt,
             "category": category,
             "tags": tags,
             "embedding": vector_array
@@ -63,7 +65,7 @@ def process_second_brain_action(params, supabase, user_id, genai_client):
         
         tag_string = ", ".join([f"#{tag}" for tag in tags]) if tags else "#untagged"
         
-        reply_text += f"📝 {content}\n"
+        reply_text += f"📝 **{headline}**\n"
         reply_text += f"🏷️ {tag_string}\n"
         reply_text += f"📐 Vector mapped in {len(vector_array)} dimensions.\n"
         

@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+  --color-aura-purple: #774CFF;
+  --color-aura-dark: #05020F;
+  --color-aura-gray: #C4C3C6;
+  --color-aura-white: #FFFFFF;
+  --font-inter: "Inter Variable", sans-serif;
+}
+
+@font-face {
+  font-family: 'Inter Variable';
+  src: url('/InterVariable.ttf') format('truetype');
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@layer base {
+
+  body {
+    background-color: #F8F9FA; /* Very subtle off-white for the main background to make cards pop */
+    color: var(--color-aura-dark);
+    font-family: var(--font-inter);
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Custom minimal scrollbar */
+  ::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #E5E7EB;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #D1D5DB;
+  }
+}

@@ -3,10 +3,26 @@ from datetime import datetime, date, timedelta
 
 logger = logging.getLogger("AuraOS.FinanceHelpers")
 
+def _parse_transaction_datetime(value: str):
+    if not value:
+        return None
+    try:
+        return datetime.fromisoformat(value)
+    except Exception:
+        try:
+            return datetime.fromisoformat(value + 'T00:00:00')
+        except Exception:
+            return None
+
+
 def _get_date_range(filter_str: str):
     """Parses filter strings into (start_iso, end_iso) where end_iso might be None."""
     now = datetime.now()
-    if filter_str == "This Week":
+    if filter_str == "Today":
+        start = now.replace(hour=0, minute=0, second=0, microsecond=0)
+        end = now.replace(hour=23, minute=59, second=59, microsecond=999999)
+        return start.isoformat(), end.isoformat()
+    elif filter_str == "This Week":
         start = (now - timedelta(days=now.weekday())).replace(hour=0, minute=0, second=0, microsecond=0)
         return start.isoformat(), None
     elif filter_str == "Last Month":
@@ -40,13 +56,17 @@ def get_mtd_spent(supabase, user_id: str, start_iso: str = None, end_iso: str = 
     try:
         if raw_data is not None:
             valid = [r for r in raw_data if r.get("transaction_type") == "debit"]
-            if start_iso: valid = [r for r in valid if (r.get("transaction_date") or "") >= start_iso]
-            if end_iso: valid = [r for r in valid if (r.get("transaction_date") or "") <= end_iso]
+            if start_iso:
+                start_date = datetime.fromisoformat(start_iso[:10]).date()
+                valid = [r for r in valid if _parse_transaction_datetime(r.get("transaction_date") or "").date() >= start_date]
+            if end_iso:
+                end_date = datetime.fromisoformat(end_iso[:10]).date()
+                valid = [r for r in valid if _parse_transaction_datetime(r.get("transaction_date") or "").date() <= end_date]
             return round(sum(r.get("amount", 0) for r in valid), 2)
             
         query = supabase.table("expenses").select("amount").eq("user_id", user_id).eq("transaction_type", "debit")
-        if start_iso: query = query.gte("transaction_date", start_iso)
-        if end_iso: query = query.lte("transaction_date", end_iso)
+        if start_iso: query = query.gte("transaction_date", start_iso[:10])
+        if end_iso: query = query.lte("transaction_date", end_iso[:10])
         res = query.execute()
         return round(sum(r["amount"] for r in res.data if r.get("amount")), 2)
     except Exception as e:
@@ -59,13 +79,17 @@ def get_total_income(supabase, user_id: str, start_iso: str = None, end_iso: str
     try:
         if raw_data is not None:
             valid = [r for r in raw_data if r.get("transaction_type") == "credit"]
-            if start_iso: valid = [r for r in valid if (r.get("transaction_date") or "") >= start_iso]
-            if end_iso: valid = [r for r in valid if (r.get("transaction_date") or "") <= end_iso]
+            if start_iso:
+                start_date = datetime.fromisoformat(start_iso[:10]).date()
+                valid = [r for r in valid if _parse_transaction_datetime(r.get("transaction_date") or "").date() >= start_date]
+            if end_iso:
+                end_date = datetime.fromisoformat(end_iso[:10]).date()
+                valid = [r for r in valid if _parse_transaction_datetime(r.get("transaction_date") or "").date() <= end_date]
             return round(sum(r.get("amount", 0) for r in valid), 2)
             
         query = supabase.table("expenses").select("amount").eq("user_id", user_id).eq("transaction_type", "credit")
-        if start_iso: query = query.gte("transaction_date", start_iso)
-        if end_iso: query = query.lte("transaction_date", end_iso)
+        if start_iso: query = query.gte("transaction_date", start_iso[:10])
+        if end_iso: query = query.lte("transaction_date", end_iso[:10])
         res = query.execute()
         return round(sum(r["amount"] for r in res.data if r.get("amount")), 2)
     except Exception as e:
@@ -79,8 +103,12 @@ def get_top_category(supabase, user_id: str, start_iso: str = None, end_iso: str
         totals: dict = {}
         if raw_data is not None:
             valid = [r for r in raw_data if r.get("transaction_type") == "debit"]
-            if start_iso: valid = [r for r in valid if (r.get("transaction_date") or "") >= start_iso]
-            if end_iso: valid = [r for r in valid if (r.get("transaction_date") or "") <= end_iso]
+            if start_iso:
+                start_date = datetime.fromisoformat(start_iso[:10]).date()
+                valid = [r for r in valid if _parse_transaction_datetime(r.get("transaction_date") or "").date() >= start_date]
+            if end_iso:
+                end_date = datetime.fromisoformat(end_iso[:10]).date()
+                valid = [r for r in valid if _parse_transaction_datetime(r.get("transaction_date") or "").date() <= end_date]
             if not valid:
                 return "N/A"
             for row in valid:
@@ -88,8 +116,8 @@ def get_top_category(supabase, user_id: str, start_iso: str = None, end_iso: str
                 totals[cat] = totals.get(cat, 0) + (row.get("amount") or 0)
         else:
             query = supabase.table("expenses").select("category, amount").eq("user_id", user_id).eq("transaction_type", "debit")
-            if start_iso: query = query.gte("transaction_date", start_iso)
-            if end_iso: query = query.lte("transaction_date", end_iso)
+            if start_iso: query = query.gte("transaction_date", start_iso[:10])
+            if end_iso: query = query.lte("transaction_date", end_iso[:10])
             res = query.execute()
             if not res.data:
                 return "N/A"
@@ -108,8 +136,12 @@ def get_transactions(supabase, user_id: str, start_iso: str = None, end_iso: str
     try:
         if raw_data is not None:
             valid = raw_data
-            if start_iso: valid = [r for r in valid if (r.get("transaction_date") or "") >= start_iso]
-            if end_iso: valid = [r for r in valid if (r.get("transaction_date") or "") <= end_iso]
+            if start_iso:
+                start_date = datetime.fromisoformat(start_iso[:10]).date()
+                valid = [r for r in valid if _parse_transaction_datetime(r.get("transaction_date") or "").date() >= start_date]
+            if end_iso:
+                end_date = datetime.fromisoformat(end_iso[:10]).date()
+                valid = [r for r in valid if _parse_transaction_datetime(r.get("transaction_date") or "").date() <= end_date]
             
             # Sort by transaction_date descending
             valid.sort(key=lambda x: x.get("transaction_date") or "", reverse=True)
@@ -128,8 +160,8 @@ def get_transactions(supabase, user_id: str, start_iso: str = None, end_iso: str
             ]
             
         query = supabase.table("expenses").select("id, amount, category, merchant, transaction_date, transaction_type").eq("user_id", user_id)
-        if start_iso: query = query.gte("transaction_date", start_iso)
-        if end_iso: query = query.lte("transaction_date", end_iso)
+        if start_iso: query = query.gte("transaction_date", start_iso[:10])
+        if end_iso: query = query.lte("transaction_date", end_iso[:10])
         res = query.order("transaction_date", desc=True).limit(limit).execute()
         return [
             {
@@ -153,15 +185,19 @@ def get_category_breakdown(supabase, user_id: str, start_iso: str = None, end_is
         totals: dict = {}
         if raw_data is not None:
             valid = [r for r in raw_data if r.get("transaction_type") == "debit"]
-            if start_iso: valid = [r for r in valid if (r.get("transaction_date") or "") >= start_iso]
-            if end_iso: valid = [r for r in valid if (r.get("transaction_date") or "") <= end_iso]
+            if start_iso:
+                start_date = datetime.fromisoformat(start_iso[:10]).date()
+                valid = [r for r in valid if _parse_transaction_datetime(r.get("transaction_date") or "").date() >= start_date]
+            if end_iso:
+                end_date = datetime.fromisoformat(end_iso[:10]).date()
+                valid = [r for r in valid if _parse_transaction_datetime(r.get("transaction_date") or "").date() <= end_date]
             for row in valid:
                 cat = row.get("category") or "Other"
                 totals[cat] = totals.get(cat, 0) + (row.get("amount") or 0)
         else:
             query = supabase.table("expenses").select("category, amount").eq("user_id", user_id).eq("transaction_type", "debit")
-            if start_iso: query = query.gte("transaction_date", start_iso)
-            if end_iso: query = query.lte("transaction_date", end_iso)
+            if start_iso: query = query.gte("transaction_date", start_iso[:10])
+            if end_iso: query = query.lte("transaction_date", end_iso[:10])
             res = query.execute()
             for row in res.data:
                 cat = row.get("category") or "Other"
@@ -215,16 +251,20 @@ def get_chart_data(supabase, user_id: str, start_iso: str = None, end_iso: str =
         daily: dict = {}
         if raw_data is not None:
             valid = [r for r in raw_data if r.get("transaction_type") == "debit"]
-            if start_iso: valid = [r for r in valid if (r.get("transaction_date") or "") >= start_iso]
-            if end_iso: valid = [r for r in valid if (r.get("transaction_date") or "") <= end_iso]
+            if start_iso:
+                start_date = datetime.fromisoformat(start_iso[:10]).date()
+                valid = [r for r in valid if _parse_transaction_datetime(r.get("transaction_date") or "").date() >= start_date]
+            if end_iso:
+                end_date = datetime.fromisoformat(end_iso[:10]).date()
+                valid = [r for r in valid if _parse_transaction_datetime(r.get("transaction_date") or "").date() <= end_date]
             for row in valid:
                 d_str = row["transaction_date"][:10] if row.get("transaction_date") else None
                 if d_str:
                     daily[d_str] = daily.get(d_str, 0) + (row.get("amount") or 0)
         else:
             query = supabase.table("expenses").select("amount, transaction_date").eq("user_id", user_id).eq("transaction_type", "debit")
-            if start_iso: query = query.gte("transaction_date", start_iso)
-            if end_iso: query = query.lte("transaction_date", end_iso)
+            if start_iso: query = query.gte("transaction_date", start_iso[:10])
+            if end_iso: query = query.lte("transaction_date", end_iso[:10])
             res = query.execute()
             for row in res.data:
                 d_str = row["transaction_date"][:10] if row.get("transaction_date") else None

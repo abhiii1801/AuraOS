@@ -22,7 +22,7 @@ def get_vault_nodes_and_links(supabase, user_id: str) -> tuple:
     try:
         res = (
             supabase.table("second_brain")
-            .select("id, category, content, embedding")
+            .select("id, category, content, embedding, created_at, raw_prompt")
             .eq("user_id", user_id)
             .execute()
         )
@@ -45,13 +45,14 @@ def get_vault_nodes_and_links(supabase, user_id: str) -> tuple:
             # 2. FILTER: Only process rows that have a valid embedding
             if raw_emb and isinstance(raw_emb, list):
                 content = row.get("content", "")
-                label = (content[:40] + "…") if len(content) > 40 else content
                 
                 nodes.append({
                     "id": str(row["id"]),
                     "category": row.get("category", "Misc"),
                     "content": content,
-                    "label": label,
+                    "label": content,
+                    "raw_prompt": row.get("raw_prompt", content),
+                    "created_at": row.get("created_at"),
                 })
                 
                 # Update the row with the parsed list for the similarity math below

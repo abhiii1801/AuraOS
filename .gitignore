@@ -9,28 +9,28 @@
 # ----------------------------------------------------------------------------
 # Frontend Specific (.next, node_modules, etc.)
 # ----------------------------------------------------------------------------
-aura-os-frontend/node_modules/
-aura-os-frontend/.pnp
-aura-os-frontend/.pnp.*
-aura-os-frontend/.yarn/*
-!aura-os-frontend/.yarn/patches
-!aura-os-frontend/.yarn/plugins
-!aura-os-frontend/.yarn/releases
-!aura-os-frontend/.yarn/versions
+new-frontend/node_modules/
+new-frontend/.pnp
+new-frontend/.pnp.*
+new-frontend/.yarn/*
+!new-frontend/.yarn/patches
+!new-frontend/.yarn/plugins
+!new-frontend/.yarn/releases
+!new-frontend/.yarn/versions
 
-aura-os-frontend/coverage/
-aura-os-frontend/.next/
-aura-os-frontend/out/
-aura-os-frontend/build/
+new-frontend/coverage/
+new-frontend/.next/
+new-frontend/out/
+new-frontend/build/
 
-aura-os-frontend/npm-debug.log*
-aura-os-frontend/yarn-debug.log*
-aura-os-frontend/yarn-error.log*
-aura-os-frontend/.pnpm-debug.log*
+new-frontend/npm-debug.log*
+new-frontend/yarn-debug.log*
+new-frontend/yarn-error.log*
+new-frontend/.pnpm-debug.log*
 
-aura-os-frontend/.vercel/
-aura-os-frontend/*.tsbuildinfo
-aura-os-frontend/next-env.d.ts
+new-frontend/.vercel/
+new-frontend/*.tsbuildinfo
+new-frontend/next-env.d.ts
 
 # ----------------------------------------------------------------------------
 # Backend Specific (venv, __pycache__, tokens, etc.)

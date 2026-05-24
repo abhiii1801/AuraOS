@@ -86,7 +86,8 @@ For "second_brain_agent":
   "agent": "second_brain_agent",
   "action_type": "save_note",
   "parameters": {
-    "content": "The cleaned up, core thought or note.",
+    "headline": "A short, AI-generated title/headline summarizing the note (max 5-7 words).",
+    "raw_prompt": "The full, raw thought or note provided by the user.",
     "category": "MUST BE EXACTLY ONE OF: ['Idea', 'Tech', 'Life', 'Content', 'People', 'Note', 'Admin', 'Misc']. YOU MUST NOT USE ANY OTHER CATEGORY.",
     "tags": ["generate", "up to", "3", "relevant", "keywords", "e.g., 'f1', 'hackathon', 'python'"]
   }
